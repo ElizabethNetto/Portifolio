@@ -3,19 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--API-->
+        <script src="https://unpkg.com/scrollreveal"></script>
         <title>Portifolio | Elizabeth Netto</title>
 
     <!--responsividade-->
     <link rel="stylesheet" href="assets/css">
 
         <!--css-->
-        <link rel="assets/css/footer.css">
-        <link rel="assets/css/habilidades">
-        <link rel="assets/css/inicio">
-        <link rel="assets/css/projetos">
-        <link rel="assets/css/sobre">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        <link rel="stylesheet" href="assets/css/habilidades">
+        <link rel="stylesheet" href="assets/css/inicio">
+        <link rel="stylesheet" href="assets/css/projetos">
+        <link rel="stylesheet" href="assets/css/sobre">
 </head>
-<body onload="typeWriter(fName);" style="height: 100%;" class="vsc-initialized">
+<body onload="typeWriter(fName);">
     <div>
         <input type="checkbox" id="fechar-menu" class="fechar-menu" aria-label="fechar-menu" role="button"/>
         <label class="fechar-menulab" for="fechar-menu" title="Fechar"></label>
@@ -29,30 +32,23 @@
                     <img src="assets/img/E-removebg-preview.png" alt="logo"/>
                 </a>
             </div>
-
+            <nav class="direita">
+                <ul onclick="getElementById('fechar-menu').checked=false;">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                </ul>
+            </nav>
          </div>
       </div>
     </div>
- <nav class="direita">
-    <h2 class="logo">EN</h2>
-    <ul onclick="getElementById('fechar-menu').checked=false;">
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#habilidades">Habilidades</a>
-    </ul>
-  </nav>
-    </div>
-
-    <header>
-        <Main>
         <div>   
             
             <nav class="direita">
        
     </nav>
         </div>
-    </header>
         <div class="inicio">
         <div class="container">
             <h3 class="titulo">Elizabeth Netto</h3>
@@ -62,14 +58,12 @@
             </div>
         </div>
     </div>
-</main>
-
 </div>
  <!--sobre-->
     <div class="desenho">
     <img
       class="desenho1"
-      src="/assets/img/05f9_zym0_220705.jpg"
+      src="assets/img/05f9_zym0_220705.jpg"
       alt="Eu-em-desenho"
     />
   </div>
