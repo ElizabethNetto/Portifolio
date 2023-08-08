@@ -1,0 +1,9 @@
+.logo {
+    padding: 10px 0;
+}
+#inicio {
+    background: linear-gradient(63.13deg, #8b272e 51.04%, #1e8865 51.05%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}

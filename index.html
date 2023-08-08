@@ -6,25 +6,50 @@
         <title>Portifolio | Elizabeth Netto</title>
 
     <!--responsividade-->
-    <link rel="stylesheet" href="/assets/css/responsive">
+    <link rel="stylesheet" href="assets/css">
 
         <!--css-->
-        <link rel="/assets/css/footer.css">
-        <link rel="/assets/css/habilidades">
-        <link rel="/assets/css/inicio">
-        <link rel="/assets/css/projetos">
-        <link rel="/assets/css/sobre">
+        <link rel="assets/css/footer.css">
+        <link rel="assets/css/habilidades">
+        <link rel="assets/css/inicio">
+        <link rel="assets/css/projetos">
+        <link rel="assets/css/sobre">
 </head>
 <body onload="typeWriter(fName);" style="height: 100%;" class="vsc-initialized">
-    <header>
-        <Main>
-        <div>   
-            <h2 class="logo">EN</h2>
-            <nav class="direita">
+    <div>
+        <input type="checkbox" id="fechar-menu" class="fechar-menu" aria-label="fechar-menu" role="button"/>
+        <label class="fechar-menulab" for="fechar-menu" title="Fechar"></label>
+        
+        <!--Divs-->
+    <div class="cabecalho">
+      <div class="menu-meio">
+         <div class="cabecalho-container-meio">
+            <div class="logo-esquerda">
+                <a href="index.html">
+                    <img src="assets/img/EN.png" />
+                </a>
+            </div>
+
+         </div>
+      </div>
+    </div>
+ <nav class="direita">
+    <h2 class="logo">EN</h2>
+    <ul onclick="getElementById('fechar-menu').checked=false;">
         <a href="#inicio">Início</a>
         <a href="#sobre">Sobre</a>
         <a href="#projetos">Projetos</a>
         <a href="#habilidades">Habilidades</a>
+    </ul>
+  </nav>
+    </div>
+
+    <header>
+        <Main>
+        <div>   
+            
+            <nav class="direita">
+       
     </nav>
         </div>
     </header>
@@ -38,9 +63,12 @@
         </div>
     </div>
 </main>
-<div class="desenho">
+
+</div>
+ <!--sobre-->
+    <div class="desenho">
     <img
-      class="desenho2"
+      class="desenho1"
       src="/assets/img/05f9_zym0_220705.jpg"
       alt="Eu-em-desenho"
     />
