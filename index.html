@@ -20,31 +20,25 @@
         <link rel="stylesheet" href="assets/css/sobre.css">
 </head>
 <body onload="typeWriter(fName);">
-    <div>
-        <input type="checkbox" id="fechar-menu" class="fechar-menu" aria-label="fechar-menu" role="button"/>
-        <label class="fechar-menulab" for="fechar-menu" title="Fechar"></label>
-        
-        <!--Div class-->
-    <div class="cabecalho">
-      <div class="menu-centro">
-         <div class="box-cabecalho centro">
-            <div class="logo esquerda">
-                <a href="index.html">
+    <header>
+        <nav>
+        <a class="logo" href="/">
                     <img src="assets/img/N.png" alt="logo"/>
                 </a>
-            </div>
-            <nav class="direita">
-                <ul onclick="getElementById('fechar-menu').checked=false;">
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            <ul class="nav-list">
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
                     <li><a href="#projetos">Projetos</a></li>
-                    
-                </ul>
-            </nav>
-         </div>
-      </div>
-    </div>
+            </ul>
+        </nav>
+     </header>
+
         <!--inicio-->
         <section id="inicio">
             <div class="ajuste-altura">
@@ -56,7 +50,7 @@
                         <div class="apresenta">
                             <p class="descreve">
                                 Olá, eu sou <br />
-                                <span style="display: inline;" class="nome">Elizabeth Netto</span>
+                                <span style="display: inline" class="nome">Elizabeth Netto</span>
                                 <br />
                                 Desenvolvedora front-end Jr
                             </p>
@@ -101,7 +95,7 @@
                 </div>
             </div>
         </div>   
-
+    </section>
         <!--Habilidades-->
     <section id="habilidades">
         <div class="habi centro">
@@ -167,13 +161,13 @@
                     <div class="proj">
                         <div class="breve"><p>EM BREVE</p></div>
                     </div>
-                    <div class="proj-vermais">
+                    <div class="proj vermais">
                         <div class="breve"><p>EM BREVE</p></div>
                     </div>
-                    <div class="proj-vermais">
+                    <div class="proj vermais">
                         <div class="breve"><p>EM BREVE</p></div>
                     </div>
-                    <div class="proj-vermais">
+                    <div class="proj vermais">
                         <div class="breve"><p>EM BREVE</p></div>
                     </div>                
                     <div class="github">
@@ -217,5 +211,8 @@
                     </div>
                 </div>
             </footer>
+        </div>
+        <script src="assets/js/scroll.js"></script>
+        <script src="assets/js/font.js"></script>
 </body>
 </html>
